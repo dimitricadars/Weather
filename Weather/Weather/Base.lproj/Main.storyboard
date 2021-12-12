@@ -25,6 +25,9 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="settingsTableView"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="Qbf-qs-DO2" id="epF-3w-HaJ"/>
                             <outlet property="delegate" destination="Qbf-qs-DO2" id="ddm-gL-0VM"/>
@@ -64,12 +67,18 @@
                                             <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="cityNameLabel"/>
+                                            </userDefinedRuntimeAttributes>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cds-jc-OOG">
                                             <rect key="frame" x="322" y="30.5" width="76" height="39"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                             <color key="textColor" white="0.33582589289999998" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="temperatureLabel"/>
+                                            </userDefinedRuntimeAttributes>
                                         </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1qi-tv-UOk">
                                             <rect key="frame" x="169.5" y="12.5" width="75" height="75"/>
@@ -77,6 +86,9 @@
                                                 <constraint firstAttribute="height" constant="75" id="wPR-O9-YhQ"/>
                                                 <constraint firstAttribute="width" constant="75" id="xHf-Xn-FAF"/>
                                             </constraints>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="iconImage"/>
+                                            </userDefinedRuntimeAttributes>
                                         </imageView>
                                     </subviews>
                                     <constraints>
@@ -88,6 +100,9 @@
                                         <constraint firstItem="NGi-yx-umJ" firstAttribute="centerY" secondItem="hBe-Ql-nCd" secondAttribute="centerY" id="Y5k-x1-oha"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="weatherCell"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="cityNameLabel" destination="NGi-yx-umJ" id="d5i-5G-h8Q"/>
                                     <outlet property="iconImage" destination="1qi-tv-UOk" id="BsF-T0-Zxs"/>
@@ -95,6 +110,9 @@
                                 </connections>
                             </tableViewCell>
                         </prototypes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="weatherTableView"/>
+                        </userDefinedRuntimeAttributes>
                         <connections>
                             <outlet property="dataSource" destination="t3F-Xl-ReU" id="Rcc-wS-i5r"/>
                             <outlet property="delegate" destination="t3F-Xl-ReU" id="X3X-O7-YO0"/>
@@ -102,11 +120,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Weather" id="JDv-Da-XcC">
                         <barButtonItem key="leftBarButtonItem" title="Settings" id="zCN-q4-73m">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="settingsButton"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <segue destination="7aR-L9-LZy" kind="presentation" identifier="SettingsTableViewController" id="SAL-EF-8Il"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="azG-cF-rym">
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="addButton"/>
+                            </userDefinedRuntimeAttributes>
                             <connections>
                                 <segue destination="cdo-XP-pCX" kind="presentation" identifier="AddWeatherCityViewController" id="JhZ-0l-0ei"/>
                             </connections>
@@ -129,12 +153,18 @@
                                 <rect key="frame" x="20" y="87" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="cityNameTextFiled"/>
+                                </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93a-yj-3UW">
                                 <rect key="frame" x="170" y="129" width="74" height="30"/>
                                 <state key="normal" title="Save">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="saveButton"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="saveCityButtonPressed" destination="7Op-8I-cDT" eventType="touchUpInside" id="YFk-kc-ZmE"/>
                                 </connections>
